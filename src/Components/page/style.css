@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(135deg, #180718, #100619, #17042a, #18101e);
+  color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+}
+
+.artist-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.artist-section {
+  margin-bottom: 60px;
+}
+
+.artist-info {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #444444;
+  padding-bottom: 20px;
+}
+
+.artist-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #555;
+}
+
+.artist-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.artist-info p {
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.artworks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.artwork {
+  border: 1px solid #333;
+  background-color: #400736;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(198, 176, 176, 0.5);
+}
+
+.artwork-image {
+  width: 100%;
+  height: 250px; /* Set a fixed height */
+  object-fit: cover;
+  border: 2px solid #271414;
+}
+
+.artwork h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.artwork p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.artwork-price {
+  font-weight: bold;
+  color: #ffcc00;
+  margin-top: 10px;
+}
