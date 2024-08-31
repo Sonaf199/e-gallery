@@ -1,0 +1,144 @@
+/* General Styles */
+.homepage-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../public/hp.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hero-button {
+    padding: 0.75rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .features-section {
+    padding: 2rem;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .feature-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .gallery-preview-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .preview-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .preview-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .preview-card {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, rotate 0.3s ease;
+  }
+  
+  .preview-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .preview-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .preview-card:hover .preview-overlay {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-description {
+      font-size: 1.2rem;
+    }
+  
+    .feature-card {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  
+    .preview-card {
+      width: 90%;
+    }
+  }
+  
